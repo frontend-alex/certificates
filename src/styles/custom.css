@@ -1,0 +1,74 @@
+:root {
+  --bg-color: rgb(20, 20, 20);
+  --card-color: rgb(23, 23, 23);
+}
+
+#cards {
+}
+
+#cards:hover > .card::after {
+  opacity: 1;
+}
+
+.card {
+  @apply bg-neutral-100 dark:bg-neutral-900 rounded-lg cursor-pointer flex h-[150px] flex-col relative
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card::before,
+.card::after {
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  transition: opacity 500ms;
+  width: 100%;
+}
+
+.card::before {
+  background: radial-gradient(
+    800px circle at var(--mouse-x) var(--mouse-y),
+    rgba(255, 255, 255, 0.06),
+    transparent 40%
+  );
+  z-index: 3;
+}
+
+.card::after {
+  background: radial-gradient(
+    600px circle at var(--mouse-x) var(--mouse-y),
+    rgba(255, 255, 255, 0.4),
+    transparent 40%
+  );
+  z-index: 1;
+}
+
+.card > .card-content {
+  @apply bg-neutral-100 dark:bg-neutral-900 rounded-[inherit] flex flex-col  inset-0.5 p-2.5 absolute z-[2]
+}
+
+/* -- ↓ ↓ ↓ extra card content styles ↓ ↓ ↓ -- */
+
+
+.line-gradient {
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.9332107843137255) 61%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.line-gradient-light {
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.06) 40%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
