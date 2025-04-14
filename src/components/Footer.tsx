@@ -1,4 +1,4 @@
-import { Github, Info, Instagram, Linkedin, User, User2 } from "lucide-react";
+import { Github, Info, Instagram, Linkedin, User2 } from "lucide-react";
 import {
   Tooltip,
   TooltipProvider,
