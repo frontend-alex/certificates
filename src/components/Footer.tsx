@@ -34,19 +34,13 @@ const Footer = () => {
                 size={18}
               />
             </a>
-            <a href="https://www.instagram.com/yourrfavalex">
-              <Instagram
-                className="cursor-pointer hover:text-indigo-600 transition-all"
-                size={18}
-              />
-            </a>
             <a href="https://www.linkedin.com/in/aleksander-ivanov-0356a8274/">
               <Linkedin
                 className="cursor-pointer hover:text-indigo-600 transition-all"
                 size={18}
               />
             </a>
-            <a href="https://portfolio-backup-eight.vercel.app/">
+            <a href="https://aiivanov.dev">
               <User2
                 className="cursor-pointer hover:text-indigo-600 transition-all"
                 size={18}
